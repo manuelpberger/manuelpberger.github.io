@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+.japanese {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+
 article {
     text-align: justify;
 }
@@ -86,4 +93,10 @@ div.paper span.publishedin {
     font-size: 0.8rem;
     font-style: italic;
     text-align: left;
+}
+
+hr.mybottomline {
+    width: 30%;
+    text-align: left;
+    margin: 0 0 1rem 0;
 }
