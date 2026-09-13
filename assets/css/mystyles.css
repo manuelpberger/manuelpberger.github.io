@@ -1,3 +1,7 @@
+article {
+    text-align: justify;
+}
+
 div.paper {
     /* cf look of code*/
     background: rgba(255, 255, 255, 0.075);
