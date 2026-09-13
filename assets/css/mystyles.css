@@ -1,27 +1,68 @@
 div.paper {
+    /* cf look of code*/
     background: rgba(255, 255, 255, 0.075);
     border-radius: 4px;
-    margin: 0 0.25rem;
+    margin: 0 0.25rem 0.5rem;
     padding: 0.25rem 0.65rem;
 }
 
-div.paper h4 {
-    margin: 0 0 0 0;
-}
 
-p.authors {
+div.paper summary {
+    /* cf look of h4 */
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.5;
+    /*margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;*/
     font-size: 0.8rem;
-    margin: 0 0 0.5rem 0;
+    /* this is new */
+    margin: 0 0 0 0;
+    letter-spacing: 0.1rem;
+}
+summary {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+/*summary::before {
+  content: "▶";
+  flex: 0 0 auto;
+}
+details[open] > summary::before {
+  content: "▼";
+}*/
+summary::before {
+  content: "";
+  flex: 0 0 auto;  
+  /* The triangle */
+  width: 0;
+  height: 0;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.5rem solid #ffffff;
+
+  margin-top: 0.25rem;
+}
+details[open] > summary::before {
+  /* Rotate the triangle downward */
+  transform: rotate(90deg);
 }
 
-p.abstract {
+
+div.paper p.authors {
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem 0.8rem;
+}
+div.paper p.abstract {
     font-size: 0.8rem;
     text-align: justify;
     text-justify: inter-word;
     margin: 0 0 0.5rem 0;
 }
-
-p.abstract::before {
+div.paper p.abstract::before {
     content: "Abstract: ";
     font-weight: bold;
 }
