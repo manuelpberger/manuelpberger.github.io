@@ -1,0 +1,42 @@
+div.paper {
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 4px;
+    margin: 0 0.25rem;
+    padding: 0.25rem 0.65rem;
+}
+
+div.paper h4 {
+    margin: 0 0 0 0;
+}
+
+p.authors {
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem 0;
+}
+
+p.abstract {
+    font-size: 0.8rem;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 0 0.5rem 0;
+}
+
+p.abstract::before {
+    content: "Abstract: ";
+    font-weight: bold;
+}
+
+div.paper a {
+    font-size: 0.8rem;
+}
+div.paper a::before {
+    content: "[";
+}
+div.paper a::after {
+    content: "]";
+}
+
+div.paper span.publishedin {
+    font-size: 0.8rem;
+    font-style: italic;
+}
