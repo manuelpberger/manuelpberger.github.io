@@ -27,7 +27,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Manuel Berger</h1>
-								<p>Mathematical Physicist</p>
+								<p>Mathematical Physicist</p>								
 							</div>
 						</div>
 						<nav>
@@ -36,7 +36,7 @@
 								<li><a href="#reseacrh">Research</a></li>
 								<li><a href="#misc">Misc</a></li>
 								<!--<li><a href="#contact">Contact</a></li>-->
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<!--li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -56,11 +56,20 @@
 									</span>
 								</blockquote>
 
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-								<p>I conducted my B.Sc. and M.Sc. in physics at ETH Zürich. ... My master's thesis (available upon request) was on ...</p>
-								<hr class="mybottomline">
-								<span class="icon fa-file">&emsp;<a href="files/manuel_berger_CV.pdf" target="_blank">My CV</a></span>
-
+								<p class="nobottomskip">On this website, you can find descriptions of my present and past academic activities. For more detailed information, check out <span class="icon fa-file my-inline-icon"></span><a href="files/manuel_berger_CV.pdf" target="_blank">my CV</a>. A quick summary:</p>
+								<ul>
+									<li> I earned my B.Sc. (2023) and M.Sc. (2025) in physics at ETH Zürich, Switzerland. </li> 
+									<li> My master's thesis<sup>1</sup> was conducted in the <a href="https://itp.phys.ethz.ch/research/qftstrings.html" target="_blank">Quantum Field Theory and Strings</a> research group. It was aimed at relating the (Riemann) theta function at different genera utilizing, among other things, the notion of Schottky uniformization.<sup>1</sup></li>
+								</ul>
+								<p class="nobottomskip">A proper subset of my interest is given by the following list.</p>
+								<ul>
+									<li>Interplay between mathematical fields like complex analysis and abstract algebra in the study of physical concepts.</li>
+									<li>Mathematical physics, Quantum field theory, string theory, conformal field theory, symmetries, general relativity, cosmology, algebraic topology.</li>
+									<li>Implementation, visualisation, and numerical approaches to mathematical frameworks using software such as Mathematica.</li>
+								</ul>
+								<hr class="my-bottomline">
+								<p class="footnote"><sup>1</sup> Available upon request.</p>
+								<p class="footnote"><sup>2</sup>The background of this website represents a theta function with odd characterstics on a genus-two Schottky cover.</p>
 							</article>
 
 						<!-- Work -->
@@ -74,7 +83,7 @@
 									</span>
 								</blockquote>
 
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p> Currently, I am interested in the Schottky uniformization of compact Riemann surfaces, which has recently been used in the context of constructing numerically accessible special functions at higher genera. In particular, I would like to implement the symplectic symmetry inherent in the period matrix at the level of the Schottky group.</p>
 
 								<h3>Selected works</h3>
 								<div class="paper">
@@ -89,7 +98,7 @@
 										<a href="https://arxiv.org/abs/2602.04715" target="_blank">arXiv:2602.04715</a>
 										<a href="https://inspirehep.net/literature/3115459" target="_blank">Inspire HEP</a>
 									</details>
-								</div>
+								</div>						
 							</article>
 
 						<!-- Misc -->
@@ -114,13 +123,13 @@
 								<p>Besides science, one of my greatest passions is the art of paper folding, <em>origami</em> (jap. <span class="japanese">折り紙)</span><sup>1</sup>. For me, it is the perfect blend of artistic freedom and mathematical rigour. Some of my works can be found <a href="https://shadten.github.io/schattenorigami/" target="_blank">here</a>. This website is under construction, so it might be a bit wonky here and there.</p>
 
 								<h3>Reading</h3>
-								<p>How about something nice to read here? </p>
+								<span class="note">How about something nice to read here? </span>
 
 								<h3>Hiking</h3>
-								<p>This is a classic. Maybe add some photos...</p>
+								<span class="note">Maybe add some photos...</span>
 
-								<hr class="mybottomline">
-								<sup>1 </sup>From <span class="japanese">折る</span> (<i>oru</i>, "to fold") and <span class="japanese">紙</span> (<i>kami</i>, "paper")
+								<hr class="my-bottomline">
+								<p class="footnote" style="white-space: pre;"><sup class="footnote">1</sup>From <span class="japanese">折る</span> (<i>oru</i>, "to fold") and <span class="japanese">紙</span> (<i>kami</i>, "paper").</p>
 							</article>
 
 						<!-- Contact -->
@@ -396,9 +405,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 							</article>
 					</div>
-
+				<!--- social icons -->
+					<div id="social-icons">
+						<ul class="icons" style="margin-bottom: 1rem;">
+							<li><a href="mailto:manberger@protonmail.com" target="_blank" class="icon fa-envelope"><span class="label">GitHub</span></a></li>
+							<li><a href="https://orcid.org/0009-0007-1009-4062" target="_blank" class="icon brands fa-orcid"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-github" style="color: red;"><span class="label">GitHub</span></a></li>
+						</ul>
+					</div>
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="footer">						
 						<p class="copyright">&copy; Manuel Berger. Design: <a href="https://html5up.net">HTML5 UP</a>. Last updated: Sep. 2026</p>
 					</footer>
 			</div>
