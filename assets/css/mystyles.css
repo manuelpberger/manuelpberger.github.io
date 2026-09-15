@@ -129,28 +129,22 @@ p.footnote sup {
     font-size: 0.8rem;
 }
 
-/* cf style of #footer */
-#social-icons {
-    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    width: 100%;
-    max-width: 100%;
-    /*margin-top: 2rem;*/
-    text-align: center;
+#header-social-icons {
+    width: fit-content;
+    border-top:
+    solid 1px #ffffff;
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
 }
-body.is-article-visible #social-icons {
-    -moz-transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
-    -moz-filter: blur(0.1rem);
-    -webkit-filter: blur(0.1rem);
-    -ms-filter: blur(0.1rem);
-    filter: blur(0.1rem);
-    opacity: 0;
-}
-body.is-preload #social-icons {
-    opacity: 0;
+
+#header-social-icons:before {
+    /* see style of #header > *:before */
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(-1.5rem - 1px);
+    left: calc(50% - 1px);
+    width: 1px;
+    height: calc(1.5rem + 1px);
+    background: #ffffff;
 }
