@@ -114,7 +114,7 @@ span.note {
 p.footnote {
     font-size: 0.8rem;
     line-height: 1.3;
-    display: inline-flex;
+    /* display: inline-flex; */
     margin: 0 0 0 0;
 }
 p.footnote sup {
