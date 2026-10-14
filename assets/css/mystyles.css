@@ -11,10 +11,15 @@ hr.my-bottomline {
     margin: 2rem 0 1rem 0;
 }
 
-article p, blockquote {
+article p {
     text-align: justify;
     text-justify: inter-word;
 }
+
+blockquote {
+    font-size: 0.85rem;
+}
+
 
 p.nobottomskip {
     margin-bottom: 0;
